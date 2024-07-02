@@ -1,64 +1,108 @@
 :root {
+    /* Edit this to change your background */
     --background-image: url(https://cdn.discordapp.com/attachments/608848206293368832/609462042872643591/1561585576531.png);
+
+    /* Edit this to change your friends icon picture */
     --friends-icon: url(https://i.imgur.com/63g6Em8.jpg);
+
+    /* Edit this to change your friends icon picture position */
     --friends-icon-position: center center;
+
+    /* Edit this to change your friends icon picture zoom */
     --friends-icon-zoom: 100%;
+
+    /* Change the main color */
     --main-color: rgb(67, 181, 129);
+
+    /* Change global transparency */
     --main-transparency: rgba(0, 0, 0, 0.8);
+
+    /* Change the unread server animation. Replace it with "none" to remove any animations */
+    --unread-server-animation: rainbow;
+
+    /* Change background color when you hover over members or friends */
     --hover-list-bg-color: rgba(255, 255, 255, 0.15);
+
+    /* Change the tiny border lines color */
     --border-lines-color: hsla(0, 0%, 100%, 0.1);
+
+    /* Change the scroll bar color appearance */
     --scroll-bar-color: rgba(255, 255, 255, 0.15);
+
+    /* Change chat messages font size, you can use any unit: px, em, rem, %, etc. */
     --font-size: 16px;
+
+    /* Edit this to change the color of a selected text or voice channel */
     --selected-text-voice-color: #f6f6f7;
+
+    /* Edit this to change the color when you hover over a text channel */
     --text-hover-color: #b9bbbe;
+
+    /* Edit this to change the color when you hover over a voice channel */
     --voice-hover-color: #f6f6f7;
+
+    /* Edit this to change the color of an unread text channel */
     --unread-text-color: #dcddde;
+
+    /* Write "transparent" to make the options sections match the theme */
     --options-transparency: transparent;
 }
 
+/* Example usage of the CSS variables */
 body {
-    background-image: var(--background-image) !important;
-    background-size: cover !important;
+    background-image: var(--background-image);
 }
 
-.theme-dark .friends-icon {
-    background-image: var(--friends-icon) !important;
-    background-position: var(--friends-icon-position) !important;
-    background-size: var(--friends-icon-zoom) !important;
+.friends-icon {
+    background-image: var(--friends-icon);
+    background-position: var(--friends-icon-position);
+    background-size: var(--friends-icon-zoom);
 }
 
-.theme-dark .container-2Thooq {
-    color: var(--main-color) !important;
+.main-color {
+    color: var(--main-color);
 }
 
-.theme-dark .scrollbar-3dvm_9 {
-    background-color: var(--scroll-bar-color) !important;
+.global-transparency {
+    background-color: var(--main-transparency);
 }
 
-.theme-dark .container-1ow0q8:hover {
-    background-color: var(--hover-list-bg-color) !important;
+.unread-server-animation {
+    animation: var(--unread-server-animation);
 }
 
-.theme-dark .header-23xsNx {
-    border-color: var(--border-lines-color) !important;
+.hover-list-bg {
+    background-color: var(--hover-list-bg-color);
 }
 
-.theme-dark .selected-1-mYnM {
-    color: var(--selected-text-voice-color) !important;
+.border-lines {
+    border-color: var(--border-lines-color);
 }
 
-.theme-dark .wrapper-1VLyxH:hover {
-    color: var(--text-hover-color) !important;
+.scroll-bar {
+    background-color: var(--scroll-bar-color);
 }
 
-.theme-dark .name-1gD6HS:hover {
-    color: var(--voice-hover-color) !important;
+.chat-font-size {
+    font-size: var(--font-size);
 }
 
-.theme-dark .unread-25zGE3 {
-    color: var(--unread-text-color) !important;
+.selected-text-voice {
+    color: var(--selected-text-voice-color);
 }
 
-.theme-dark .options-2QenbG {
-    background-color: var(--options-transparency) !important;
+.text-hover {
+    color: var(--text-hover-color);
+}
+
+.voice-hover {
+    color: var(--voice-hover-color);
+}
+
+.unread-text {
+    color: var(--unread-text-color);
+}
+
+.options-section {
+    background-color: var(--options-transparency);
 }
